@@ -17,7 +17,16 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Здесь будут добавлены другие маршруты:
+          <Route path="/cars" element={<Cars />} />
+          <Route path="/cars/:id" element={<CarDetails />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
+          */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

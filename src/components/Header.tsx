@@ -16,19 +16,19 @@ const Header = () => {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link to="/">
-                <NavigationMenuLink className="text-white/80 hover:text-white px-4 py-2 transition-colors">
+              <NavigationMenuLink asChild>
+                <Link to="/" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
                   Главная
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
-              <Link to="/cars">
-                <NavigationMenuLink className="text-white/80 hover:text-white px-4 py-2 transition-colors">
+              <NavigationMenuLink asChild>
+                <Link to="/cars" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
                   Автопарк
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
@@ -50,11 +50,11 @@ const Header = () => {
             </NavigationMenuItem>
             
             <NavigationMenuItem>
-              <Link to="/contacts">
-                <NavigationMenuLink className="text-white/80 hover:text-white px-4 py-2 transition-colors">
+              <NavigationMenuLink asChild>
+                <Link to="/contacts" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
                   Контакты
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

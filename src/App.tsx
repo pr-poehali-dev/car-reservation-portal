@@ -7,6 +7,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import History from "./pages/History";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
+import Cars from "./pages/Cars";
+import CarDetails from "./pages/CarDetails";
 
 const queryClient = new QueryClient();
 
@@ -19,15 +23,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/history" element={<History />} />
-          {/* Здесь будут добавлены другие маршруты:
-          <Route path="/cars" element={<Cars />} />
-          <Route path="/cars/:id" element={<CarDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/signin" element={<Signin />} />
-          */}
+          <Route path="/cars" element={<Cars />} />
+          <Route path="/cars/:id" element={<CarDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

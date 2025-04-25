@@ -1,7 +1,6 @@
 
 import { Link } from "react-router-dom";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
 
@@ -16,19 +15,15 @@ const Header = () => {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
-                  Главная
-                </Link>
-              </NavigationMenuLink>
+              <Link to="/" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
+                Главная
+              </Link>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/cars" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
-                  Автопарк
-                </Link>
-              </NavigationMenuLink>
+              <Link to="/cars" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
+                Автопарк
+              </Link>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
@@ -50,21 +45,17 @@ const Header = () => {
             </NavigationMenuItem>
             
             <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/contacts" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
-                  Контакты
-                </Link>
-              </NavigationMenuLink>
+              <Link to="/contacts" className="text-white/80 hover:text-white px-4 py-2 transition-colors">
+                Контакты
+              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         
-        <Link to="/profile">
-          <Button variant="outline" className="bg-transparent border-zinc-700 hover:bg-zinc-800 text-white">
-            <User size={16} className="mr-2" />
-            Личный кабинет
-          </Button>
-        </Link>
+        <Button variant="outline" className="bg-transparent border-zinc-700 hover:bg-zinc-800 text-white">
+          <User size={16} className="mr-2" />
+          Личный кабинет
+        </Button>
       </div>
     </header>
   );
